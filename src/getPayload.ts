@@ -18,6 +18,17 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// const transporter = nodemailer.createTransport({
+//   host: "smtp.meta.ua",
+//   secure: true,
+//   port: 465,
+//   auth: {
+//     user: "rimidalvatopayl@meta.ua",
+//     pass: process.env.META_PASSWORD,
+//   },
+// });
+// META_PASSWORD=19072005Vova
+
 let cached = (global as any).payload;
 
 if (!cached) {
