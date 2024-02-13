@@ -88,7 +88,20 @@ var start = function () { return __awaiter(void 0, void 0, void 0, function () {
                     },
                 });
                 app.post("/api/webhooks/stripe", webhookMiddleware, webhooks_1.stripeWebhookHandler);
-                if (process.env.NODE_BUILD) {
+                return [4 /*yield*/, (0, getPayload_1.getPayloadClient)({
+                        initOptions: {
+                            express: app,
+                            onInit: function (cms) { return __awaiter(void 0, void 0, void 0, function () {
+                                return __generator(this, function (_a) {
+                                    cms.logger.info("Admin URL ".concat(cms.getAdminURL()));
+                                    return [2 /*return*/];
+                                });
+                            }); },
+                        },
+                    })];
+            case 1:
+                payload = _a.sent();
+                if (process.env.NEXT_BUILD) {
                     app.listen(PORT, function () { return __awaiter(void 0, void 0, void 0, function () {
                         return __generator(this, function (_a) {
                             switch (_a.label) {
@@ -106,19 +119,6 @@ var start = function () { return __awaiter(void 0, void 0, void 0, function () {
                     }); });
                     return [2 /*return*/];
                 }
-                return [4 /*yield*/, (0, getPayload_1.getPayloadClient)({
-                        initOptions: {
-                            express: app,
-                            onInit: function (cms) { return __awaiter(void 0, void 0, void 0, function () {
-                                return __generator(this, function (_a) {
-                                    cms.logger.info("Admin URL ".concat(cms.getAdminURL()));
-                                    return [2 /*return*/];
-                                });
-                            }); },
-                        },
-                    })];
-            case 1:
-                payload = _a.sent();
                 app.use("/api/trpc", trpcExpess.createExpressMiddleware({
                     router: trpc_1.appRouter,
                     createContext: createContext,
