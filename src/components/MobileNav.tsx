@@ -39,7 +39,7 @@ const MobileNav = () => {
     );
 
   return (
-    <div>
+    <div className="lg:hidden">
       <div className="relative z-40 lg:hidden">
         <div className="fixed inset-0 bg-black bg-opacity-25" />
       </div>
@@ -73,7 +73,7 @@ const MobileNav = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-y-10 gap-x-4">
-                      {category.feachured.map((item) => (
+                      {category.featured.map((item) => (
                         <div key={item.name} className="group relative text-sm">
                           <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                             <Image
