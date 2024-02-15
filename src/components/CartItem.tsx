@@ -50,7 +50,7 @@ const CartItem = ({ product }: { product: Product }) => {
                 onClick={() => removeItem(product.id)}
                 className="flex items-center text-muted-foreground"
               >
-                <X className="w-4 h-4" />
+                <X className="w-3 h-4" />
                 Remove
               </button>
             </div>
