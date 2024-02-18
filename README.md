@@ -2,7 +2,7 @@
 
 Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
-![Project Image](https://github.com/VovaLyapota/next-ts-project/blob/master/public/thumbnail.jpg)
+![Project Image](https://github.com/VovaLyapota/next-ts-project/public/thumbnail.jpg)
 
 ## Features
 
@@ -18,4 +18,3 @@ Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 - ✉️ Beautiful emails for signing up and after purchase
 - ✅ Admins can verify products to ensure high quality
 - ⌨️ 100% written in TypeScript
-- 🎁 ...much more
