@@ -2,7 +2,7 @@
 
 Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
-![Project Image](https://github.com/VovaLyapota/next-ts-project/public/thumbnail.jpg)
+<a href="https://github.com/VovaLyapota/next-ts-project/" target="_blank">![Project Image](./public/thumbnail.jpg)</a>
 
 ## Features
 
